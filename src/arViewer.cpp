@@ -289,14 +289,14 @@ void arViewer::draw(){
 		for(int i=0; i<numDetected; i++) {
 			artk.applyModelMatrix(i);	
 			ofSetColor(255, 255, 0, 50);
-			if(!existsInArray(used_markers, used_markers_size, artk.getMarkerId(i))){
+			if(!existsInArray(used_markers, used_markers_size, artk.getMarkerID(i))){
 				ofFill();
 				ofSetColor(255, 255, 0, 50);	
 				ofRect(-25, -25, 50, 50);
 				
 				ofSetColor(255,0,0);
 				ofDrawBitmapString("Stahnete aktualni verzi: http://www.podpora-techniky.cz/ar", 0,0);
-				printf("ID: %d\n", artk.getMarkerId(i));	///
+				printf("ID: %d\n", artk.getMarkerID(i));	///
 			}
 		}
 		

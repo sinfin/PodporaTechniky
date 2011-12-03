@@ -19,6 +19,7 @@ xcuserdata/
 MANIFEST
 dist/
 build/
+bin/PodporaTechniky
 
 # Backup files
 *~.nib
